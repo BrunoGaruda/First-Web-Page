@@ -1,0 +1,44 @@
+### Básico Git ###
+
+git init --> Inicia o git 
+
+git add . --> adiciona todos os arquivos para serem rastreados pelo git 
+
+git commit -m "primeiro commit" --> tem q comentar para ser salvo no github
+
+git log --> olha o histórico das mudanças, de acordo com os commits
+
+git status --> Checa os arquivos 
+
+git log + git show --> Pega o código do histórico de commits, e olha versões anteriores.
+após o show, aperta "q" pra sair.
+
+git show (apenas) --> mostra o ultimo commit.
+
+
+### Branch ###
+
+git branch <name> -->  Ex feature/cart, criando uma ramificação para o seu projeto.
+
+git checkout feature/cart --> Muda pra essa nova "branch".
+
+git branch --> depois de criada, da pra olhar quantas ramificações tem o projeto.
+
+ls -al --> mostra os arquivos que o git está rastreando
+
+git merge feature/cart --> adiciona o "branch" no master.
+
+git branch -D feature/cart --> deleta a branch.
+
+
+### Nuvem ###
+
+Após fazer o "Básico Git", para adicionar o repositório na núvem basta criar manualmente no github, copiar o endereço
+e fazer um: 
+
+git remote add origin https://github.com/name/projeto --> para vincular seu repositório na núvem
+
+git push -u origin master --> para incluir na nuvem o repositório pela primeira vez, após eh so dar o git push.
+
+git remote -v --> para ver os repositórios
+
