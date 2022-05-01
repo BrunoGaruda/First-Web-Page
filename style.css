@@ -125,3 +125,7 @@ a:hover {
   font-weight: bold;
   text-decoration: underline wavy orangered;
 }
+a:active {
+  background-color: black;
+  font-style: italic;
+}
