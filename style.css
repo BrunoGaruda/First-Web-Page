@@ -52,6 +52,7 @@ li {
   font-style: italic;
 } */
 
+/* ID */
 #author {
   font-style: italic;
   font-size: 18px;
@@ -61,6 +62,7 @@ li {
   font-size: 16px;
 }
 
+/* Class */
 .related-author {
   font-size: 18px;
   font-weight: bold;
@@ -78,4 +80,48 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad; /*https://developer.mozilla.org/en-US/docs/Web/CSS/border*/
   border-bottom: 5px solid #1098ad;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.86);
+}
+
+/* .first-li {
+  font-weight: bold;
+} */
+
+/* Pseudo-Class */
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+/* Pode se usar "odd" (ímpar), even(par) */
+/* li:nth-child(2) {
+  color: red;
+} */
+
+/*Prestar atenção na sintax, pois o primeiro filho do article é o header*/
+/* article p: :first-child {
+  color: red;
+} */
+
+/*Styling Links*/ /*https://css-tricks.com/almanac/selectors/l/link/*/
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+/*Visited é a cor do link*/
+a:visited {
+  color: #777;
+}
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline wavy orangered;
 }
